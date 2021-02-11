@@ -16,9 +16,9 @@ postgresql 12.5
 * railsサーバーはdocker等使わず`rails s`で運用
 * PostgreSQLはdocker
   ```
-  $ docker run --rm -d \
-    -p 5432:5432 \
-    -v postgres-tmp:/var/lib/postgresql/data \
-    -e POSTGRES_HOST_AUTH_METHOD=trust \
-    postgres:12.5
+  # 起動
+  $ ./postgresql-docker-run.sh
+
+  # 停止
+  $ docker stop blog_postgresql
   ```
