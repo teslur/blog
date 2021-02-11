@@ -12,7 +12,7 @@ workers 2
 preload_app!
 
 # デーモン化の設定
-# daemonize
+daemonize
 pidfile "#{tmp_path}/pids/puma.pid"
 
 # Allow puma to be restarted by `rails restart` command.
