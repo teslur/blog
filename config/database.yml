@@ -28,5 +28,5 @@ test:
 production:
   <<: *default
   database: blog_production
-  password: <%= ENV['POSTGRESQL_PASSWORD'] %>
-  host: <%= ENV['POSTGRESQL_HOSTNAME'] %>
+  password: "<%= ENV['POSTGRESQL_PASSWORD'] %>"
+  host: "<%= ENV['POSTGRESQL_HOSTNAME'] %>"
